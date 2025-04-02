@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼</title>
+</head>
+<>
+    <!-- 암묵적인 방법--> <!-- <input>태그가 라벨안에 들어간다면 내용만 눌러도 체크가 가능해진다. -->
+    <label>패티 추가<input type="checkbox"></label>
+    <label>치즈 추가<input type="checkbox"></label>
+    <label>피클 추가<input type="checkbox"></label>
+
+    <!-- 명시적인 방법 --><!-- id="이름" 글자를 눌러도 체크가 가능해지는 태그 -->
+    <label for="addshot">샷추가</label><input type="checkbox" id="addshot"> 
+    <!-- <label>태그밖에 <input>태그를 넣는다면 Checbox 를 눌러야지만 체크 가능 
+        for="이름"태그를 넣는다면 id="이름"을 넣어서 체크 가능하게 만들수있다 -->
+    <label for="addIce">얼음추가</label><input type="checkbox" id="addIce">
+    <label for="lsess25">물25ml적게</label> <input type="checkbox" id="lsess25">
+    <br>
+    <br>
+
+    <fieldset><!-- 테두리를 채워주는 태그 -->
+        <legend>족발 사이즈</legend> <!-- 테두리사이에 내용을 넣을수있는 태그-->
+    <label>족발 소<input type="radio" name="size"></label>
+    <label>족발 중<input type="radio" name="size"></label>
+    <label>족발 대<input type="radio" name="size"></label>
+    </fieldset>
+    <br>
+
+
+    <!-- 텍스트 공간 만들어주는 태그 -->
+    <textarea>다중 텍스트 입력 공간</textarea>
+    <br>
+    <br>
+    <!-- -->
+    <select multiple size="6">
+        <optgroup label="햄버거"><!-- optgroup 은 select 그룹에서 option에있는 거에 강조하는 제목 -->
+            <option>휄렛버거</option>
+            <option>치즈버거</option>
+            <option>소고기버거</option>
+        </optgroup>
+        <optgroup label="면류">
+            <option selected>라면</option>
+            <option>냉면</option>
+            <option>쫄면</option>
+            <option>칼국수</option>
+        </optgroup>
+    </select>
+    
+
+
+
+</body>
+</html>
