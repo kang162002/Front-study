@@ -1,12 +1,25 @@
 <!DOCTYPE html>
+<!-- 직접 쓰지않고 ! 낌표를 넣으면 바로 써짐-->
 <html lang="en">
+<!-- head 머리부분 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+
 </head>
+
+<!-- body 몸통부분 -->
 <body>
     <!-- 처음으로 만든 웹페이지 주석-->
     <p>처음으로 만든 웹페이지</p>
+
+
+
 </body>
+
+
+
 </html>
