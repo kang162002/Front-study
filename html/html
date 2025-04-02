@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<!-- 직접 쓰지않고 ! 낌표를 넣으면 바로 써짐-->
+<!-- !DOCTYPE 직접 쓰지않고 ! 낌표를 넣으면 바로 쓸수있다.-->
+<!-- html의 태그 문서의 시작과 끝 -->
 <html lang="en">
-<!-- head 머리부분 -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- head 문서의 정보및 정의 웹 브라우저에 노출되지 않음-->
+    <head>
+    <!-- meta /metadate/데이터를 설명하는 명령어 '데이터의 정보 범위를 설정해줌'-->
+        <meta charset="UTF-8"> <!-- "UTF-8"쓰는 이유 및 전세계의 표준, 다른걸 쓴다면 깨질수있다,-->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 
+    </head>
 
-
-</head>
-
-<!-- body 몸통부분 -->
-<body>
-    <!-- 처음으로 만든 웹페이지 주석-->
-    <p>처음으로 만든 웹페이지</p>
-
-
-
-</body>
-
-
-
+    <!-- body(몸통) 화면에 실제 표시할 내용들 -->
+    <body>
+        
+        <!--웹페이지에 내용을 적습니다-->
+        <p>처음으로 만든 웹페이지</p>
+    </body>
 </html>
