@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag4번 이미지 </title>
+</head>
+<body>
+    <!--  링크 이동 태그 -->
+    <!-- 
+        a 태그 target 속성 
+        _blank : 새창
+        _self : 현재창 
+        herf "속성" : 이동 할 경로
+    
+        -->
+
+
+    <!-- <a>태그 인라인요소-->
+        <a href="http://www.naver.com" target="_self" title="네이버로 타이틀" >네이버</a>
+    <br>
+        <a href="http://www.coupang.com" target="_blank" title="쿠팡">쿠팡</a>
+       
+    <br>
+
+        <!-- <img> 태그는 인라인 태그 -->
+        <img src="guri.jpg" alt="너구리?라쿤?"> <!-- 동일한 경로 -->
+        <img src="tagimg/cat.jpg" alt="고양이사진"> <!-- 하위 폴더 경로 -->
+        <img src="../../images/cat dog.jpg" alt="개와고양이">
+        <br>
+        <br>
+
+        <!-- 현재 동일 경로 "./image이름" 거나 더위쪽 경로로 간다면 "../폴더이름"-->
+        <a href="http://www.naver.com" target="_blank" title="네이버">
+             <img src="tagimg/cat.jpg" alt="고양이사진">
+        </a>
+    
+
+        <br>
+        <!-- 외부 이미지를 주소를 scr="url"에 넣어서  이미지를 따올수도있다. -->
+        <img src="https://cdn.pixabay.com/photo/2015/04/10/01/41/fox-715588_1280.jpg" alt="여우">
+    
+
+
+
+
+
+</body>
+</html>
