@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 태그 관련</title>
+</head>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+
+
+    <body>
+        <table>
+                <!-- tr 태그 한개가 하나의 행-->
+                <tr>
+                    <th>번호</th> <!-- -th, td 태그 한개가 하나의 열 -->
+                    <th>상품명</th>
+                    <th>수량</th>
+                    <th>가격</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>콜라</td>
+                    <td>1개</td>
+                    <td>1,500</td>
+                </tr>    
+                <tr>
+                    <td>2</td>
+                    <td>사이다</td>
+                    <td>2개</td>
+                    <td rowspan="2">1,000</td> <!-- rowspan="속성값" 몇개의 행을 차지할지 내리는 명령어 -->
+                </tr>    
+                <tr>
+                    <td>3</td>
+                    <td>탄산수</td>
+                    <td>3개</td>
+                    <!-- <td>1,000</td> -->
+                    <!-- 행의 방향은 왼쪽에서 오른쪽 위에서 아래로 한다 (합칠때) -->
+                </tr>
+                <tr>
+                    <td>총 금액</td>
+                    <td rowspan="3">6,500</td>
+                </tr>
+
+        </table>
+
+        <table>
+            <thead>
+                    <!-- tr 태그 한개가 하나의 행-->
+                <tr>
+                    <th scope="col">번호</th> <!-- -th, td 태그 한개가 하나의 열 -->
+                    <th scope="col">상품명</th>
+                    <th scope="col">수량</th>
+                    <th scope="col">가격</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>콜라</td>
+                    <td>1개</td>
+                    <td>1,500</td>
+                </tr>    
+                <tr>
+                    <td>2</td>
+                    <td>사이다</td>
+                    <td>2개</td>
+                    <td rowspan="2">1,000</td> <!-- rowspan="속성값" 몇개의 행을 차지할지 내리는 명령어 -->
+                </tr>    
+                <tr>
+                    <td>3</td>
+                    <td>탄산수</td>
+                    <td>3개</td>
+                    <!-- <td>1,000</td> -->
+                    <!-- 행의 방향은 왼쪽에서 오른쪽 위에서 아래로 한다 (합칠때) -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>총 금액</td>
+                    <td rowspan="3">6,500</td>
+                </tr>
+            </tfoot>
+        </table>
+   
+    </body>
+</html>
