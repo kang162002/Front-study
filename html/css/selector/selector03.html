@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style>
+        /*  가상 클래스 선택자 [구조적 가상클래스 선택자 ]*/
+                /* 구조적 가상 클래스 선택자 */
+        P:first-child {color: red;} /* 구조적 첫번째 자식만 바뀌는 선택자 */
+
+        P:last-child {color: blue;} /* 구조적 마지막 자식만 바뀌는 선택자 */
+
+      /* p:nth-child(3) {color: green;} /* 구조적 자식중 3번째 자식만 바꿔주는 선택자 명령어 */
+
+      /* p:nth-of-type(3) {color: green;} /* 같은 타입중에 몇번째 자식인지만 골라 바꾸는 바꾸는 명령어 */
+
+        /*
+            짝수 : even 2n
+            홀수 : odd 2n + 1
+        *//* 같은 태그중 짝수와 홀수 번째만을 바꾼다. */
+
+        p:nth-of-type() {color: green;}
+        
+        
+
+
+  </style>
+
+</head>
+<body>
+   
+    <div>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+        <p>p5</p>
+        <p>p6</p>
+    </div>
+
+    <div>
+        <p>p1</p>
+        <span>p2</span>
+        <p>p3</p>
+        <span>p4</span>
+        <p>p5</p>
+        <p>p6</p>
+    </div>
+
+    <div>
+        <p>p1</p>
+        <span>p2</span>
+        <span>p4</span>
+        <p>p3</p>
+        <p>p5</p>
+        <p>p6</p>
+    </div>
+    
+
+
+
+
+</body>
+</html>

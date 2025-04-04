@@ -15,21 +15,48 @@
         /* .top-div > p { color: blue;} */
         /* div > p{ color: blue;} */
         
-        
+
         /* 하위 선택자 부모태그 아래에있는 하위 자식태그와 그아래에있는 태그들까지 선택해 속성값을 줄수있다
-             예:) .부모태그 (한칸뛰우고)자식태그 {속성값}  */
+         예:) .부모태그 (한칸뛰우고)자식태그 {속성값}  */
         /* .top-div p { color: blue;}
         .top-div span { color: green;} */
 
         
-
         /* 인접 형제 선택자 특정 태그와 가장 인접한 형제관계의 태그에 적용된다 예:) 태그 + 태그 {속성값} */
         /* p + span {color: orange;} */
 
 
-
         /* 일반 형제 선택자 특성 태그와 인접해있는 모든 형제태그에 적용 태그 ~ 태그 */
         p ~ span {color: orange;}
+
+        /* 가상 요소 선택자 :: 콤마 */
+        #vr-p::before {
+            content:"***";
+            color: aqua;
+        }
+
+        #vr-p::after {
+            content: "...";
+            color: gold;
+        }
+        /* 가장클래스  */
+        a:link {color: deeppink;}
+        a:visited {color: tomato;}
+
+        /*  동적 가상 클래스 선택자  */
+        a:hover {color: blue}    /* 마우스를 올린 상태 */  
+        a:active {color: green;} /* 마우스로 클릭한 상태 */
+        
+        
+        /* 입력 요소 가상 클래스 선택자   */
+        input:focus {color: red;} /* 입력 요소에 커서가 클릭했을시 활성화되는 상태 */
+        input:disabled {color: coral;} /* 상호작용 요소가 비활성화되는 선택자 */
+
+        .chk:checked + span {color: red;} /* 체크박스 요소에 체크한 상태 
+        ( checked + 태그이름 을 넣을시 인정합 상대에 활성화)  */
+        .chk:checked + label {color: red;}
+
+
 
     </style>
 
@@ -60,6 +87,25 @@
 
     <p>p5</p>
 
+
+
+    <a href="http://www.nate.com">s네이트</a>
+    <a href="http://nexon.com">넥슨</a>
+    <a href="http://naver.com">네이버</a>
+    
+    <br><br>
+
+    <input hype="text" value="input1 value">
+    <input hype="text" value="input1 value" disabled>
+
+    <br>
+
+    <input type="checkbox" class="chk"><span>출근</span><br>
+    <input type="checkbox" class="chk"><span>퇴근</span><br>
+    <input type="checkbox" class="chk" id="retire"><label for="retire">조퇴</label><br>
+    <label>
+        <input type="checkbox" class="chk"><span>조퇴</span>
+    </label>
 
 
 </body>
