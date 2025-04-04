@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4월4일 셀렉트</title>
+
+    <style>
+    
+    
+        /* 특정 대상자일수록 더강하게 우선순위로 적용한다 */
+        /*  전체 선택자  */
+        *{
+            color: red
+        }
+        /*  태그 선택자  */
+        h2 { 
+            color: blue;
+        }
+        
+        /*  아이디 선택자  */
+        /* 앞에 # 이 들어가면 아이디 선택자  */
+        #select-id {    
+            color: green;    
+        }
+       
+        /* 클래스 속성자 */
+        /* 클래스 선택자는 앞에 . 을 찍어야 클래스 선택자가 작동한다, 
+    여러가지는 적용시킬때 */
+        .select-calss {color:black;
+        } 
+
+        /* 속성 선택자 */
+
+        [target="_blank"] { color: aqua }
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <h1>h1</h1>
+
+    <h2>h2</h2>
+
+    <h3 id="select-id">h3</h3>
+
+    <h4 class="sselect-clss">h4</h4>
+
+    <h5>h5</h5>
+
+    <p>P 하나</p>
+    <p class="">P 둘</p>
+    <p>P 셋</p>
+    <p>P 넷</p>
+
+
+    <!-- 속성 태그  -->
+
+    <a href="http://www.naver.com" target="_blank">네이버로 이동</a>
+    <a href="http://google.com" target="_self">구글로 이동</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
